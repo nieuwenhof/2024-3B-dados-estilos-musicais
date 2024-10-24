@@ -9,9 +9,52 @@
 :root {
     --fonte-titulo: "Edu AU VIC WA NT Guides", cursive;
     --fonte-texto: "Zilla Slab", serif;
-    --rosa: #f72585ff;
-    --roxo: #7209b7ff;
+    --rosa: rgb(247, 226, 239);
+    --roxo: rgb(230, 64, 14);
     --violeta: #3a0ca3ff;
     --azul: #4361eeff;
     --azulzinho: #4cc9f0ff;
+}
+body{
+    font-family: var(--fonte-texto);
+    background-color: var(--azulzinho);
+    color: var(--rosa);
+    height: 100vh;
+}
+header{
+    background-color: var(--violeta);
+    text-align: center;
+}
+h1{
+    font-family: var(--fonte-texto);
+    font-size: 2rem;
+    padding: 1.2REM 0;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+nav a{
+    text-decoration: none;
+    color: var(--rosa);
+    margin: 0 2rem 1rem 0;
+    font-size: 1.5rem
+}
+nav a:hover{
+    text-decoration: underline;
+    font-size: 1.7rem;
+    color: var(--roxo);
+    transition: 0.5s;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--violeta);
+    color: var(--rosa);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
 }
